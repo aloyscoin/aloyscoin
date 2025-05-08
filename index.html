@@ -43,10 +43,10 @@
         const codes = csvText.split("\n").map(row => row.trim().replace(/[\r\n]+/g, ""));
 
         if (codes.includes(code)) {
-          result.textContent = "✅ Code is valid and legitimate.";
+          result.textContent = "Coin is LEGITIMATE";
           result.style.color = "green";
         } else {
-          result.textContent = "❌ Code is NOT valid.";
+          result.textContent = "Code is NOT LEGITIMATE";
           result.style.color = "red";
         }
       } catch (err) {
